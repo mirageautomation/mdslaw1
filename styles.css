@@ -1,0 +1,159 @@
+ /* The sidebar menu */
+ *img{
+  width: 100%;
+  height: auto;
+ }
+ h1 {
+    color: #291515;
+    margin-inline: auto;
+}
+p {
+    margin-bottom: 20px;
+}
+body{
+  box-sizing: border-box;
+}
+.disclaimer-container {
+  font: 1em sans-serif;
+  line-height: 1.77rem;
+    position: absolute;
+    width: 70vw;
+    height: auto;
+    margin: 2rem 10%;
+    padding: 1rem;
+    background-color: hwb(62 44% 7%);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+    text-align: center;
+}
+
+#acceptButton, #declineButton{
+    padding: .75rem 1rem;
+    border-radius: 12%;
+    margin-right: 2rem;
+    background-color: #ef8a8a;
+}
+ 
+ 
+ .sidebar {
+    height:100%;  /* 100% Full-height */
+    width:0px; /* 0 width - change this with JavaScript */
+    position: fixed ; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    display: flex;
+    background: hsl(0, 10%, 10%, 0.65); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+     /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: wheat;
+    
+    transition: 0.3s;
+  }
+  .mobile{
+    height: 80vh;
+    background-image: url("./img/dmitrij-paskevic-YjVa-F9P9kk-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+   
+    color: #0bcf28;
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+  }
+   
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #74541b;
+    
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    display: flex;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    display: hidden;
+  
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: hsl(0, 10%, 10%, 0.55);
+    height: 3rem;
+    width: 3rem;
+    margin: 0 50%;
+    color: whitesmoke;
+    padding: auto;
+    border: none;
+    display: none;
+    
+    
+    
+    
+    
+  }
+  
+  .openbtn:hover {
+    background-color: #cd6312;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .6s; /* If you want a transition effect */
+
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+    
+   
+  }
+  .logoimg{  
+    margin-inline: .5rem;
+    height: 3rem;
+    
+    }
+    .leptop{
+      align-items: center;
+    }
+    .hero{
+      
+      margin-left: 2rem 2rem;
+    }
+    .abhiyaan-img{
+      height: 100vh;
+      object-fit: contain;    
+    }
+
+  .abhiyaan-img img{
+    width: 100%;
+    height: auto;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-width: 550px) {
+    #mySidebar{
+      gap: 2rem;
+      
+      flex-direction: column;
+      }
+      .mobile{
+        flex-direction: column;
+      }
+      .openbtn{
+        display: inline;
+      }
+    
+    } 
+ 
